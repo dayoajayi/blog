@@ -1,0 +1,16 @@
+1. rails new [app_name]
+
+2. rake db:create
+	(also, update the database file to define the db schema)
+	
+3. rake db:migrate
+
+4. generate model
+
+5. generate controller 
+
+6. generate scaffold according to the model, specifying fields
+
+Possible next steps:
+- add validation
+- add awesomeness
