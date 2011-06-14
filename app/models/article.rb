@@ -1,4 +1,10 @@
 class Article < ActiveRecord::Base
-  validates :title, :presence => true
+  validate :title, :presence => true
   validate :body, :presence => true
+  
+  belongs_to :user
+  
+  def long_title
+    "#{title} - #{published_at}"
+  end
 end
